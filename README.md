@@ -1,9 +1,9 @@
 # Jarede Neto — Backend Portfolio
 
 **Senior Backend Engineer · Platform & Distributed Systems**  
-Brazil · Remote (UTC-3) · Available for contracts in USD
+Brazil · Remote (UTC-3) · Available for contracts
 
-📎 [LinkedIn](https://www.linkedin.com/in/jaredeneto/?locale=en-US) · 📧 Available on request
+📎 [LinkedIn](https://www.linkedin.com/in/jaredeneto/) · 📧 Available on request
 
 ---
 
@@ -19,16 +19,26 @@ This portfolio contains public, standalone projects that reflect the kind of wor
 
 ## Projects
 
-### 🔧 [platform-core](https://github.com/jaredeneto/platform-core) `In progress`
-> Shared services layer simulating a real platform engineering context: API gateway, inter-service contracts, and observability instrumentation.
+### 🔧 [platform-core](https://github.com/jaredeneto/platform-core)
+> Shared services layer simulating a real platform engineering context: API gateway, JWT auth with scope-based access control, inter-service contracts, and distributed tracing.
 
-**Demonstrates:** modular architecture · OpenTelemetry · Fastify · Zod contracts · Docker  
-**Stack:** Node.js · TypeScript · Fastify · OpenTelemetry · PostgreSQL · Redis
+**Demonstrates:** modular architecture · Zod contracts as single source of truth · JWT middleware as higher-order function · OpenTelemetry with vendor-neutral OTel Collector · integration tests with Fastify inject · multi-stage Docker build  
+**Stack:** Node.js · TypeScript · Fastify · Zod · OpenTelemetry · Docker  
+**Structure:** built incrementally across 3 branches — foundation → contracts & auth → observability
 
 ---
 
-### ⚙️ More projects coming
-> Async worker in Go · SLO-as-code · Event-driven patterns
+### ⚙️ [async-worker-go](https://github.com/jaredeneto/async-worker-go) `Coming soon`
+> Async message processing worker in Go with concurrency control, circuit breaker, graceful shutdown, and Prometheus metrics.
+
+**Stack:** Go · RabbitMQ · Prometheus · Docker
+
+---
+
+### 📋 [slo-as-code](https://github.com/jaredeneto/slo-as-code) `Coming soon`
+> SLO definitions, alert rules as code, and structured runbooks — SRE practices made explicit and version-controlled.
+
+**Stack:** Terraform · Datadog · Prometheus rules · Markdown runbooks
 
 ---
 
@@ -48,52 +58,7 @@ This portfolio contains public, standalone projects that reflect the kind of wor
 
 ## What I'm looking for
 
-Senior backend or platform engineering contracts — remote, USD-based.  
+Senior backend or platform engineering contracts — remote.  
 Comfortable with async-first teams, distributed environments, and high-ownership engineering culture.
 
 > References and detailed case studies available on request.
-
----
-
----
-
-# Jarede Neto — Portfólio Backend
-
-**Senior Backend Engineer · Plataforma & Sistemas Distribuídos**  
-Brasil · Remoto (UTC-3) · Disponível para contratos em USD
-
-📎 [LinkedIn](https://www.linkedin.com/in/jaredeneto/) · 📧 Disponível sob solicitação
-
----
-
-## Sobre
-
-Engenheiro backend com 14+ anos de experiência construindo e modernizando sistemas distribuídos de larga escala — mais recentemente no Itaú Unibanco, maior instituição financeira da América Latina, atendendo dezenas de milhões de usuários ativos.
-
-Meu trabalho tem foco em **engenharia de plataforma**: camadas de serviços compartilhados, stacks de observabilidade, práticas de SRE e padrões arquiteturais adotados por múltiplos squads. Operei em ambientes de alto impacto onde confiabilidade não é opcional.
-
-Este portfólio reúne projetos públicos e independentes que refletem o tipo de trabalho que realizei em produção — agora de forma visível.
-
----
-
-## Projetos
-
-### 🔧 [platform-core](https://github.com/jaredeneto/platform-core) `Em andamento`
-> Camada de serviços compartilhados simulando um contexto real de engenharia de plataforma: API gateway, contratos entre serviços e instrumentação de observabilidade.
-
-**Demonstra:** arquitetura modular · OpenTelemetry · Fastify · contratos com Zod · Docker  
-**Stack:** Node.js · TypeScript · Fastify · OpenTelemetry · PostgreSQL · Redis
-
----
-
-### ⚙️ Mais projetos em breve
-> Worker assíncrono em Go · SLO como código · Padrões event-driven
-
----
-
-## O que estou buscando
-
-Contratos sênior de backend ou engenharia de plataforma — remoto, remunerados em USD.  
-Confortável com times async-first, ambientes distribuídos e cultura de alto ownership técnico.
-
-> Referências e estudos de caso detalhados disponíveis sob solicitação.
